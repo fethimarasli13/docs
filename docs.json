@@ -22,6 +22,12 @@
             ]
           },
           {
+            "group": "Başlarken",
+            "pages": [
+              "essentials/temel-kavramlar"
+            ]
+          },
+          {
             "group": "Temel Özellikler",
             "pages": [
               "essentials/markdown",
