@@ -39,7 +39,8 @@
               "ai-assistants/araclar-ve-fonksiyonlar",
               "ai-assistants/custom-mid-call-tools",
               "ai-assistants/ses-secimi-ve-ses-klonlama",
-              "ai-assistants/dolgu-sesleri"
+              "ai-assistants/dolgu-sesleri",
+              "ai-assistants/Cal.com-Randevu-Takvimi"
               
             ]
           },

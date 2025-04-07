@@ -1,0 +1,56 @@
+---
+title: "Cal.com Randevu Takvimi"
+description: "AI asistanınızın Cal.com entegrasyonunu kullanarak nasıl randevu takvimi oluşturacağını öğrenin."
+---
+
+# Cal.com Randevu Takvimi
+
+AI asistanınızı, Cal.com entegrasyonunu kullanarak toplantıları ve randevuları sorunsuz bir şekilde planlamak için etkinleştirin. Bu güçlü özellik, AI’nızın mevcutluğu kontrol etmesine ve doğrudan aramalar sırasında toplantı ayarlamalarına olanak tanır.
+
+**Not:** Cal.com etkinlik ayarlarında yeni zorunlu alanlar oluşturmayın. Entegrasyon yalnızca varsayılan alanları ve isteğe bağlı telefon alanını destekler. Zorunlu özel alanlar eklemek entegrasyonun başarısız olmasına neden olur.
+
+---
+
+## 📋 Gereksinimler
+
+Cal.com entegrasyonunu ayarlamadan önce, şunlara ihtiyacınız olacak:
+
+- Bir Cal.com hesabı (hosted veya self-hosted)
+- Cal.com’da yapılandırılmış bir etkinlik türü
+- Cal.com'dan bir API anahtarı
+
+---
+
+## ⚙️ Kurulum Süreci
+
+### 1. Cal.com Yapılandırması
+
+1. Cal.com hesabınıza kaydolun veya giriş yapın
+2. AI asistanı için özel bir etkinlik türü oluşturun
+3. Bu etkinlik türüne “AI Asistanı ile Toplantı” gibi net bir isim verin
+4. Süre, mevcutluk ve diğer ayarları yapılandırın
+5. Etkinlik oluşturulduktan sonra, URL’den etkinlik kimliğini not edin
+6. API anahtarı oluşturun:
+    - Cal.com ayarlarına gidin
+    - Geliştirici Ayarları’na gidin
+    - Yeni bir API anahtarı oluşturun
+    - API anahtarını kopyalayın ve güvenli bir şekilde saklayın
+
+---
+
+### 2. Müşteri İletişim Bilgileri
+
+#### E-posta Yapılandırması
+
+Müşterilere takvim davetiyesi gönderebilmek için:
+
+- Asistanınızın giriş değişkenlerinde e-posta alanını tanımlayın
+- Lead oluştururken müşteri e-posta adresini e-posta değişkeni olarak geçirin
+- Sistem, bu e-posta adresini takvim davetiyeleri için otomatik olarak kullanacaktır
+
+#### Takvim Etkinliklerinde Telefon Numarası
+
+Arayan kişinin telefon numarasını takvim etkinliklerine dahil etmek için:
+
+- Cal.com’daki etkinlik ayarlarınıza gidin
+- “Bir soru ek
