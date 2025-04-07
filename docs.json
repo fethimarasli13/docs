@@ -101,3 +101,28 @@
     }
   }
 }
+{
+  "tab": "Kılavuzlar",
+  "groups": [
+    {
+      "group": "Giriş",
+      "pages": [
+        "introduction",
+        "quickstart",
+        "development"
+      ]
+    },
+    {
+      "group": "Temel Özellikler",
+      "pages": [
+        "essentials/ai-calls-nedir",
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation",
+        "essentials/reusable-snippets"
+      ]
+    }
+  ]
+}
