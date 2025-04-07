@@ -1,0 +1,227 @@
+
+---
+title: "Custom Mid-Call Tools"
+description: "AI asistanınızın aramalarda kullanabileceği özelleştirilmiş API entegrasyonlarını nasıl oluşturup yapılandıracağınızı öğrenin."
+---
+
+# Custom Mid-Call Tools
+
+Custom Mid-Call Tools, AI asistanınızın aramalar sırasında dış sistemlerle etkileşimde bulunmasına olanak tanır. İster stok kontrolü yapın, ister müşteri verilerini doğrulayın, ister gerçek zamanlı bilgi alın, bu araçlar AI'nizi daha güçlü ve bağlantılı hale getirir.
+
+---
+
+## 🌐 Genel Bakış
+
+Custom Mid-Call Tools, AI asistanınızın:
+
+- Konuşmalar sırasında gerçek zamanlı API çağrıları yapmasını
+- Verileri sistemlerinize alıp göndermesini
+- Canlı veriye dayalı kararlar almasını
+- Arayanlara doğru ve güncel bilgiler sağlamasını sağlar
+
+---
+
+## 🚀 Temel Avantajlar
+
+- Kodlama gerekmez — yalnızca API uç noktalarını ve parametreleri yapılandırın — AI, araçları ne zaman ve nasıl kullanacağını otomatik olarak bilir
+- Aramalar sırasında gerçek zamanlı veri erişimi
+- Mevcut sistemlerinizle sorunsuz entegrasyon
+
+---
+
+## 🛠️ Araç Kurulumu
+
+### 1. Temel Yapılandırma
+
+#### Ana Araç Yapılandırması
+
+1. **Araç Oluşumuna Erişim**  
+   AI Calls araçlarına gidin ve "Mid-Call Tool Oluştur" seçeneğine tıklayın
+
+2. **Ana Ayarları Yapılandırın**  
+   Gerekli bilgileri doldurun:
+   
+   - **Adı**: Küçük harfler ve alt çizgiler kullanarak (örneğin, check_order_status)
+   - **Açıklama**: AI'nın bu aracı nasıl ve ne zaman kullanması gerektiğini açıklayın
+   - **Uç Nokta (Endpoint)**: API URL'niz (örneğin, https://api.yourcompany.com/orders)
+   - **Zaman Aşımı**: Yanıtları almak için bekleme süresi (saniye cinsinden)
+   - **Yöntem**: GET, POST, PUT, PATCH veya DELETE seçin
+
+3. **Başlıkları Ekle**  
+   Kullanmanız gerekebilecek yaygın başlıklar:
+
+   ```
+   Content-Type: application/json
+   Authorization: Bearer your_token
+   ```
+
+---
+
+### 2. Değişken Yapılandırması
+
+#### Değişken Tanımlama
+
+Bu, AI'nın arama sırasında toplayacağı bilgiler:
+
+```
+Adı: order_number
+Tür: string
+Açıklama: "Müşteriden alınan 10 haneli sipariş numarası"
+```
+
+#### Doğrulama Kuralları
+
+Açıklamalarda format gereksinimleri ekleyin:
+
+```
+"dd/mm/yyyy formatında tarih"
+"Boşluk içermeyen telefon numarası"
+"Doğrulama için e-posta adresi"
+```
+
+### Değişken Türlerini Anlama
+
+- **String**: Adlar, adresler veya referans numaraları gibi metin değerleri
+    ```
+    Tür: string
+    Örnekler: "John Doe", "123 Main St"
+    ```
+- **Number**: Miktarlar, sayılar veya kimlikler gibi sayısal değerler
+    ```
+    Tür: number
+    Örnekler: 42, 99.99
+    ```
+- **true_false**: Evet/Hayır durumları için boolean değerler
+    ```
+    Tür: true_false
+    Örnekler: true, false
+    ```
+
+### Dinamik Uç Noktalar
+
+Uç nokta URL'nizde değişken kullanırken, bunları süslü parantez içinde yerleştirin ve doğru parametre adını kullanın.
+
+Değişkenler kullanarak uç noktalarınızı dinamik hale getirebilirsiniz:
+
+```
+Temel URL:
+https://api.example.com/orders/status
+
+Değişkenli URL:
+https://api.example.com/orders/{order_id}/status
+```
+
+AI, {order_id} parametresini, konuşma sırasında alınan gerçek değerle otomatik olarak değiştirecektir.
+
+---
+
+### Kolay Test Etme
+
+#### Otomatik Test
+
+“Test Araç” butonuna tıklayarak sahte verilerle bir test yapın:
+
+- String parametreler: “test”
+- Sayısal parametreler: 1
+- Boolean parametreler: true
+
+Yanıt kodu ve gövdesini görerek her şeyin doğru çalışıp çalışmadığını doğrulayabilirsiniz.
+
+---
+
+### Güçlü Kullanıcı Özelliği: Otomasyon Platformu Entegrasyonu
+
+Daha karmaşık mantıklara mı ihtiyacınız var? Araçınızı otomasyon platformu ile bağlayarak gelişmiş iş akışları oluşturun.
+
+İşte güçlü entegrasyonlar oluşturmanın yolu:
+
+1. Otomasyon platformunda:
+    - Yeni bir akış oluşturun
+    - Webhook tetikleyicisini ekleyin
+    - Mantığınızı oluşturun (API çağrıları, veri dönüştürme, vb.)
+    - “Yanıt Dön” ile bitirin
+
+2. Custom Tool’da:
+    - Webhook URL'nizi uç nokta olarak kullanın
+    - URL'nin sonuna /sync ekleyin
+    - Örnek: https://automation.ai-calls.ai/webhook/abc123/sync
+
+Bu, şunları yapmanıza olanak tanır:
+- API çağrılarından önce/sonra veriyi dönüştürme
+- Birden fazla API çağrısını sırayla yapma
+- Karmaşık iş mantığını uygulama
+- Hataları düzgün bir şekilde ele alma
+
+---
+
+### Gerçek Dünya Örnekleri
+
+#### Sipariş Kontrol Sistemi
+```
+Adı: check_order
+Uç Nokta: https://api.yourshop.com/orders/{order_number}
+Parametreler:
+  - Adı: order_number
+    Tür: string
+    Açıklama: "Sipariş referansı (format: ORD-XXXXX)"
+AI şunları yapacak:
+  - Sipariş numarasını isteyecek
+  - Durumu alacak
+  - Teslimat tarihleri ve durumu müşteriye açıklayacak
+```
+
+#### Randevu Durumu
+```
+Adı: check_slots
+Uç Nokta: https://api.calendar.com/availability
+Parametreler:
+  - Adı: service
+    Tür: string
+    Açıklama: "Hizmet türü (saç kesimi, masaj, danışmanlık)"
+  - Adı: date
+    Tür: string
+    Açıklama: "Tercih edilen tarih (dd/mm/yyyy)"
+AI şunları yapacak:
+  - İstenilen hizmeti soracak
+  - Tercih edilen tarihi alacak
+  - Uygun zaman dilimlerini gösterecek
+```
+
+#### Müşteri Doğrulama
+```
+Adı: verify_customer
+Uç Nokta: https://api.crm.com/verify
+Parametreler:
+  - Adı: phone
+    Tür: string
+    Açıklama: "10 haneli telefon numarası"
+  - Adı: email
+    Tür: string
+    Açıklama: "Doğrulama için e-posta adresi"
+AI şunları yapacak:
+  - İletişim bilgilerini toplayacak
+  - CRM veritabanında doğrulama yapacak
+  - Durumuna göre işlem yapacak
+```
+
+---
+
+### AI'nizi Yapılandırma
+
+AI'nın, özel araçlarınızı etkili bir şekilde kullanabilmesi için sistem komutunda açık talimatlar alması gerekir.
+
+Örnek komut bölümü:
+```
+check_order aracını ne zaman kullanmalı:
+1. Müşteri sipariş durumu hakkında sorular soruyor
+2. Takip numarasından veya teslimattan bahsediyor
+3. Paketlerinin nerede olduğunu öğrenmek istiyor
+
+Nasıl kullanılmalı:
+1. Sipariş numarasını isteyin, eğer verilmemişse
+2. Formatı doğrulayın (ORD-XXXXX)
+3. Durumu almak için aracı kullanın
+4. Sonuçları basit bir şekilde açıklayın
+```
+
+Araçlarınızı farklı konuşma akışlarıyla test edin, böylece AI her senaryoyu düzgün bir şekilde ele alabilir. Canlıya geçmeden önce basit test aramaları yapın.

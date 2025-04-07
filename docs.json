@@ -33,8 +33,15 @@
             "pages": [
               "ai-assistants/ai-asistani-nedir",
               "ai-assistants/sistem-komutlari",
+              "ai-assistants/custom-mid-call-tools",
               "ai-assistants/baslangic-mesaji-ve-sesi",
               "ai-assistants/yapay-zeka-asistani-olusturma-ve-duzenleme",
+              "ai-assistants/araclar-ve-fonksiyonlar"
+            ]
+          },
+          {
+            "group": "Araçlar ve Fonksiyonlar",
+            "pages": [
               "ai-assistants/araclar-ve-fonksiyonlar"
             ]
           },
