@@ -36,7 +36,8 @@
               "ai-assistants/baslangic-mesaji-ve-sesi",
               "ai-assistants/yapay-zeka-asistani-olusturma-ve-duzenleme",
               "ai-assistants/araclar-ve-fonksiyonlar",
-              "ai-assistants/custom-mid-call-tools"
+              "ai-assistants/custom-mid-call-tools",
+              "ai-assistants/ses-secimi-ve-ses-klonlama"
             ]
           },
           {
