@@ -38,6 +38,12 @@
             ]
           },
           {
+            "group": "Araçlar ve Fonksiyonlar",
+            "pages": [
+              "ai-assistants/araclar-ve-fonksiyonlar"
+            ]
+          },
+          {
             "group": "Temel Özellikler",
             "pages": [
               "essentials/markdown",
