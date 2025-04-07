@@ -16,7 +16,8 @@
           {
             "group": "Giriş",
             "pages": [
-              "introduction",
+              "essentials/ai-calls-nedir",
+              "essentials/ai-calls-nasil-calisir",
               "quickstart",
               "development"
             ]
@@ -24,8 +25,6 @@
           {
             "group": "Temel Özellikler",
             "pages": [
-              "essentials/ai-calls-nedir",
-              "essentials/ai-calls-nasil-calisir",
               "essentials/markdown",
               "essentials/code",
               "essentials/images",
