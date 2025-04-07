@@ -29,6 +29,12 @@
             ]
           },
           {
+            "group": "Yapay Zekâ Asistanları",
+            "pages": [
+              "ai-assistants/ai-asistani-nedir"
+            ]
+          },
+          {
             "group": "Temel Özellikler",
             "pages": [
               "essentials/markdown",
