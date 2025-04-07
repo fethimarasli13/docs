@@ -100,3 +100,17 @@
     }
   }
 }
+[
+  {
+    "section": "Giriş",
+    "pages": [
+      "essentials/nedir-ai-calls.mdx"
+    ]
+  },
+  {
+    "section": "Başlarken",
+    "pages": [
+      "quickstart.mdx"
+    ]
+  }
+]
