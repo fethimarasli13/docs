@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "AI Calls Dokümantasyon",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,10 +11,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Kılavuzlar",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Giriş",
             "pages": [
               "introduction",
               "quickstart",
@@ -22,8 +22,9 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Temel Özellikler",
             "pages": [
+              "essentials/nedir-ai-calls",
               "essentials/markdown",
               "essentials/code",
               "essentials/images",
@@ -35,16 +36,16 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "API Referansı",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "API Dokümantasyonu",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Endpoint Örnekleri",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
@@ -58,12 +59,12 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
+          "anchor": "Dokümantasyon",
           "href": "https://mintlify.com/docs",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Community",
+          "anchor": "Topluluk",
           "href": "https://mintlify.com/community",
           "icon": "slack"
         },
@@ -82,13 +83,13 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Destek",
         "href": "mailto:hi@mintlify.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Yönetim Paneli",
       "href": "https://dashboard.mintlify.com"
     }
   },
@@ -100,17 +101,3 @@
     }
   }
 }
-[
-  {
-    "section": "Giriş",
-    "pages": [
-      "essentials/nedir-ai-calls.mdx"
-    ]
-  },
-  {
-    "section": "Başlarken",
-    "pages": [
-      "quickstart.mdx"
-    ]
-  }
-]
