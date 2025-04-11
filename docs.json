@@ -59,34 +59,6 @@
           }
         ]
       },
-      {
-        "tab": "API Referansı",
-        "groups": [
-          {
-            "group": "API Dokümantasyonu",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Örnekleri",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Dokümantasyon",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
         {
           "anchor": "Topluluk",
           "href": "https://mintlify.com/community",
