@@ -59,6 +59,12 @@
           }
         ]
       },
+       {
+            "group": "Telefon Numaraları",
+            "pages": [
+              "Telefon-Numaralari/telefon-numarasi-turleri"
+            ]
+          },
         {
           "anchor": "Topluluk",
           "href": "https://mintlify.com/community",
