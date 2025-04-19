@@ -58,7 +58,9 @@
             "group": "Gelen Aramalar",
             "pages": [
               "Gelen-Aramalar/Gelen-Aramalara-Genel-Bakis",
-              "Gelen-Aramalar/Telefon-Numaralarini-saglama-ve-yonetme"
+              "Gelen-Aramalar/Telefon-Numaralarini-saglama-ve-yonetme",
+              "Gelen-Aramalar/Gelen-arama-asistanini-yapilandirma"
+            
             ]
           },
           {
