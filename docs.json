@@ -47,7 +47,8 @@
           {
             "group": "Telefon Numaraları",
             "pages": [
-              "Telefon-Numaralari/telefon-numarasi-turleri"
+              "Telefon-Numaralari/telefon-numarasi-turleri",
+              "Telefon-Numaralari/numara-satin-alma-ve-yonetme"
             ]
           },
           {
