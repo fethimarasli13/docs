@@ -108,6 +108,15 @@
             ]
           },
           {
+            "group": "Sorun Giderme ve SSS",
+            "pages": [
+              "Sorun-Giderme-ve-SSS/Ses-ve-Yanit-Sorunlari",
+              "Sorun-Giderme-ve-SSS/Faturalama-ve-Kredi-Takibi",
+              "Sorun-Giderme-ve-SSS/Cagri-Kalitesi-Sorunlari",
+              "Sorun-Giderme-ve-SSS/Ai-Davranisi-Sorunlari"
+            ]
+          },
+          {
             "group": "Temel Özellikler",
             "pages": [
               "essentials/markdown",
