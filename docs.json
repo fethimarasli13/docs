@@ -92,6 +92,14 @@
             ]
           },
           {
+            "group": "Maliyetler ve Fiyatlandırma",
+            "pages": [
+              "Maliyetler-ve-Fiyatlandırma/Maliyet-Genel-Bakis",
+              "Maliyetler-ve-Fiyatlandırma/Fiyatlandirma-Dokumu",
+              "Maliyetler-ve-Fiyatlandırma/Numara-Kiralama-ve-Fiyatlar"
+            ]
+          },
+          {
             "group": "Temel Özellikler",
             "pages": [
               "essentials/markdown",

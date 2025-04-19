@@ -1,0 +1,101 @@
+---
+title: 'Fiyatlandırma Dökümü'
+description: 'Çağrı dakikalarının nasıl hesaplandığını ve faturalandırıldığını detaylı olarak öğrenin.'
+---
+
+AiCalls.ai, faturalama için dakika tabanlı bir sistem kullanır. Bu dakikalar (veya tokenler/krediler) her çağrı yaptığınızda veya aldığınızda bakiyenizden düşülür. Gerçek “dakika başı maliyet” seçtiğiniz plana bağlıdır ve taşıyıcı maliyetleri de dakikaya dönüştürülür. İşte nasıl çalıştığı:
+
+---
+
+## 1️⃣ **Gelen ve Giden Çağrılar**
+
+- **Gelen Çağrılar**: Yapay zeka asistanınız açtığı anda dakikalar harcanmaya başlar ve arama süresince etkileşimde kalır.
+- **Giden Çağrılar**: Dakikalar, müşteri çağrıyı cevaplayıp bağlantıyı sürdüğü anda düşülmeye başlar. Arama süresi ücretlendirilmez.
+  - **Not**: Bir çağrı, yapay zeka ya da kullanıcı telefonu kapatana kadar, veya sesli yanıt sistemi (voicemail) devreye girerse, (giden çağrılar için) aktif sayılır.
+
+---
+
+## 2️⃣ **Dakikaların Kullanımı**
+
+### a) **Yapay Zeka Konuşma Süresi**
+- Yapay zeka asistanınız aktif olarak 1 dakika boyunca konuşuyorsa, planınızdan 1 dakika AI süresi olarak harcanır.
+- **Faturalama**: Saniye bazında yapılır, bu nedenle 30 saniyelik bir çağrı 0.5 dakika AI süresi harcar.
+
+---
+
+### b) **Taşıyıcı Dönüşümü**
+- **Taşıyıcı Ücreti (telekom ağ ücreti)**: Bu ücret de bakiyenizden düşülür, ancak genellikle bir sonraki dakikaya yuvarlanır.
+- **Örnek**: Eğer taşıyıcı ücretiniz 1 dakikalık bir çağrı için $0.05 ise ve planınızdaki AI oranı $0.10/dakika ise, $0.05’lik taşıyıcı ücreti, planınızın oranına göre 0.5 dakikaya dönüştürülür.
+- **Sonuç**: Tek bir 1 dakikalık konuşma toplamda:
+  - 1 AI dakikası (asistan için)
+  - + 0.5 “taşıyıcı dakikası” (taşıyıcı $0.05’ten dönüştürülen dakika)
+  - = 1.5 dakika toplamda bakiyenizden düşülür.
+
+---
+
+## 3️⃣ **Saniye Bazında Faturalama vs. Yuvarlama**
+
+### **Yapay Zeka Süresi**
+- **Faturalama**: Saniye bazında ölçülür, örneğin 70 saniye, yaklaşık 1.17 dakika AI kullanımına eşittir.
+- **Bakiye**: Planınızdaki dakika bakiyesinden tam olarak düşülür.
+
+---
+
+### **Taşıyıcı Süresi**
+- **Faturalama**: Taşıyıcı ücreti, ağ ücreti için bir tam dakikaya yuvarlanır.
+- Sonrasında, AI planınızın maliyetine göre kaç “dakika” düşürüleceğini belirlemek için bu dakika dönüşümü yapılır.
+
+---
+
+## 4️⃣ **Dahil Dakikalar ve Yükseltme**
+
+- **Her Plan**: Genellikle aylık bir dakikalık pay içerir.
+- **Dahil Dakikaların Kullanımı**: Dahil edilen dakikaları aştığınızda, planınızdaki orana göre ek dakikalarla cüzdanınızı doldurabilirsiniz.
+- **Devretmeme**: Kullanılmayan dakikalar genellikle bir sonraki aya devretmez.
+  - **Örnek**: Starter Plan’ınızda 200 dakikalık dahil dakika varsa:
+    - Eğer 180 AI dakikası ve taşıyıcı dönüşümleri kullanırsanız, bu ayda 180 dakika harcanmış olur, 20 dakika kalır.
+    - Bir sonraki ay, 200 dakikaya sıfırlanır. Eğer 210 dakikaya ihtiyacınız varsa, 10 ekstra dakikayı planınızın oranında ödersiniz.
+
+---
+
+## 5️⃣ **Hacim İndirimleri veya Kademeler**
+
+- Planlar farklılık gösterir (örneğin Starter $0.20/dakika, Pro $0.15/dakika, Agency $0.09/dakika).
+- Yüksek hacimli kullanım (örneğin 50.000+ dakika/ay) için toplu indirimler uygulanabilir, satışla iletişime geçerek bu fırsatları değerlendirebilirsiniz.
+
+---
+
+## 6️⃣ **Hızlı Kullanım Örnekleri**
+
+### **Örnek A (Giden Çağrı, Starter Plan)**
+
+- **AI Oranı**: $0.20/dakika
+- **Çağrı Süresi**: 30 saniye → 0.5 AI dakikası = $0.10 AI maliyeti.
+- **Taşıyıcı Ücreti**: $0.01/dakika, ancak 30 saniye → 1 dakika yuvarlanır → $0.01.
+  - $0.01, planınızdaki $0.20 oranı ile = 0.05 “plan dakikası” harcanır (Veya daha basit bir yaklaşım ile $0.01 / $0.20 = 0.05 dakika).
+- **Toplam**: 0.5 (AI) + 0.05 (taşıyıcı) = 0.55 dakika, planınızdan düşülür. Eğer 200 dahil dakikanız varsa, 199.45 dakikanız kalır.
+
+---
+
+### **Örnek B (Gelen Çağrı, Pro Plan)**
+
+- **AI Oranı**: $0.15/dakika
+- **Çağrı Süresi**: 90 saniye → 1.5 AI dakikası = $0.225 AI maliyeti.
+- **Taşıyıcı Ücreti**: Varsayalım ki gelen arama $0.015/dakika, 1.5 dakika çağrı süresi olduğu için 2 dakikaya yuvarlanır. Yani, toplam $0.03.
+  - $0.03 / $0.15 = 0.2 dakika planınızdan harcanır.
+- **Toplam**: 1.5 (AI) + 0.2 (taşıyıcı) = 1.7 dakika planınızdan düşülür.
+
+---
+
+## SSS
+
+- **Kullanıcı + AI aynı anda konuşursa iki kat mı ücret öderim?**
+  - Hayır, ücret toplam çağrı süresine dayanır, konuşan kişi sayısına göre paralel işlem yapılmaz.
+
+- **Birisi telefonu açıp hemen kapatırsa ne olur?**
+  - Yapay zeka birkaç saniye kaydedebilir; AI için maliyet kesirli olur, ancak taşıyıcı 1 dakikaya yuvarlayabilir.
+
+---
+
+## Sonuç
+Tüm çağrılar, AI süresi ve taşıyıcı maliyeti dönüşümü ile birlikte planınızdaki dakika bakiyenizden düşer. Kullanımınızı panelinizden takip edin, gerektiğinde ekleme yapın ve hacminize uygun planı seçin.
