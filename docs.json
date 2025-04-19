@@ -51,7 +51,13 @@
               "Telefon-Numaralari/numara-satin-alma-ve-yonetme",
               "Telefon-Numaralari/fiyatlandirma-ve-bolgeler",
               "Telefon-Numaralari/sms-yetenekleri",
-              "Telefon-Numaralari/numaralarin-asistanlara-atanmasi"
+              "numaralarin-asistanlara-atanmasi"
+            ]
+          },
+          {
+            "group": "Gelen Aramalar",
+            "pages": [
+              "Gelen-Aramalar/Gelen-Aramalara-Genel-Bakis"
             ]
           },
           {
