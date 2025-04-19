@@ -62,14 +62,13 @@
               "Gelen-Aramalar/Gelen-arama-asistanini-yapilandirma",
               "Gelen-Aramalar/Gelen-Arama-Verileri"
             ]
-             ]
           },
           {
             "group": "Giden Aramalar",
             "pages": [
               "Giden-Aramalar/Giden-Arama-Genel-Bakis",
               "Giden-Aramalar/Kampanyalar-Olusturma-ve-Yonetme"
-              ]
+            ]
           },
           {
             "group": "Temel Özellikler",
