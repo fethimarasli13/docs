@@ -84,6 +84,14 @@
             ]
           },
           {
+            "group": "Otomasyon ve Entegrasyonlar",
+            "pages": [
+              "Otomasyon-ve-Entegrasyonlar/Kodlama-Olmadan-Otomasyon-Genel-Bakis",
+              "Otomasyon-ve-Entegrasyonlar/Webhook-ve-API",
+              "Otomasyon-ve-Entegrasyonlar/Telefon-Sistemi-Entegrasyonlari"
+            ]
+          },
+          {
             "group": "Temel Özellikler",
             "pages": [
               "essentials/markdown",
