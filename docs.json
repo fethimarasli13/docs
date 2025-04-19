@@ -42,10 +42,14 @@
               "ai-assistants/dolgu-sesleri",
               "ai-assistants/Cal.com-Randevu-Takvimi",
               "ai-assistants/Ai-asistaninizi-test-edin"
-              
             ]
           },
-         
+          {
+            "group": "Telefon Numaraları",
+            "pages": [
+              "Telefon-Numaralari/telefon-numarasi-turleri"
+            ]
+          },
           {
             "group": "Temel Özellikler",
             "pages": [
@@ -59,12 +63,34 @@
           }
         ]
       },
-       {
-            "group": "Telefon Numaraları",
+      {
+        "tab": "API Referansı",
+        "groups": [
+          {
+            "group": "API Dokümantasyonu",
             "pages": [
-              "Telefon-Numaralari/telefon-numarasi-turleri"
+              "api-reference/introduction"
             ]
           },
+          {
+            "group": "Endpoint Örnekleri",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Dokümantasyon",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
         {
           "anchor": "Topluluk",
           "href": "https://mintlify.com/community",
