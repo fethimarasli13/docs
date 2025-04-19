@@ -75,6 +75,15 @@
             ]
           },
           {
+            "group": "Yapay Zeka İpuçları ve Konuşma Tasarımı",
+            "pages": [
+              "Yapay-Zeka-Ipuclari-ve-Konuma-Tasarimi/Prompt-Yazma-Temelleri",
+              "Yapay-Zeka-Ipuclari-ve-Konuma-Tasarimi/Bilgi-Tabanlari-Ekleme",
+              "Yapay-Zeka-Ipuclari-ve-Konuma-Tasarimi/Kesintiler-ve-Konusma-Duyarliligi-Yonetimi",
+              "Yapay-Zeka-Ipuclari-ve-Konuma-Tasarimi/Dil-ve-Aksan-Destegi"
+            ]
+          },
+          {
             "group": "Temel Özellikler",
             "pages": [
               "essentials/markdown",
