@@ -1,0 +1,184 @@
+---
+title: 'SIP Entegrasyonu'
+description: 'Mevcut telefon sisteminizi ve numaralarınızı AiCalls.ai ile nasıl entegre edebileceğinizi öğrenin.'
+---
+
+
+Mevcut telefon sisteminizi ve numaralarınızı AiCalls.ai ile nasıl entegre edebileceğinizi öğrenin.
+
+## 📜 **SIP Entegrasyonu Nedir?**
+SIP (Session Initiation Protocol) entegrasyonu, mevcut telefon sisteminizi AiCalls.ai ile bağlamanızı sağlar. Bu, mevcut telefon kurulumunuz ile yapay zeka platformumuz arasında bir köprü kurmak gibidir. Bu sayede:
+
+- Mevcut telefon numaralarınızı AI asistanlarımızla kullanabilirsiniz.
+- Mevcut telefon sisteminizi ve sağlayıcınızı koruyabilirsiniz.
+- Mevcut kurulumunuz üzerinden arama yapabilir ve alabilirsiniz.
+- Numaralarınız üzerinde tam kontrol sahibi olabilirsiniz.
+- Daha iyi oranlar sunan yerel VoIP sağlayıcılarıyla taşıyıcı maliyetlerini düşürebilirsiniz.
+
+---
+
+## 🔧 **Nasıl Çalışır?**
+Telefon sisteminizi AiCalls.ai ile entegre ettiğinizde:
+
+### 1. **Gelen Aramalar**
+Numaranıza yapılan aramalar, telefon sisteminiz üzerinden AiCalls.ai asistanlarımıza yönlendirilir.
+
+### 2. **Giden Aramalar**
+AiCalls.ai asistanlarımız, numaranız üzerinden giden aramalar yapabilir.
+
+### 3. **Yönetim**
+Numaralarınızı mevcut sağlayıcınız üzerinden yönetmeye devam edersiniz.
+
+### 4. **Maliyet Verimliliği**
+VoIP sağlayıcınızın rekabetçi oranlarından faydalanarak arama sonlandırma maliyetlerini azaltabilirsiniz.
+
+---
+
+## ⚙️ **Entegrasyon Seçenekleri**
+Telefon sisteminizi AiCalls.ai ile iki şekilde bağlayabilirsiniz:
+
+### 1. **PBX Uzantı Entegrasyonu**
+Bu, telefon sisteminizde AiCalls.ai platformumuza bir “uzantı” eklemek gibidir:
+
+**Nedir?**: PBX/telefon sisteminizden belirli bir uzantıyı bağlayın.
+
+**Ne için mükemmeldir?**
+- Entegrasyonu test etmek
+- Belirli uzantıları AI’ya yönlendirmek
+- Mevcut telefon sistemleri ile basit kurulum
+
+**Gerekli Bilgiler:**
+- Uzantı numaranız (örn: 1000)
+- Uzantı kullanıcı adı ve şifre
+- PBX sunucu adresiniz (örn: pbx.sirketiniz.com)
+
+**Gerçek Dünya Örneği**:  
+Ofisiniz 1001-1010 arasındaki uzantıları kullanıyor.  
+1011 numarasını AiCalls.ai asistanı için ayarladınız.  
+1011’e yapılan aramalar AiCalls.ai tarafından alınır.  
+AiCalls.ai, 1011 numarasından giden aramalar yapabilir.
+
+### 2. **Doğrudan Numaralı Entegrasyon**
+Bu, belirli telefon numaralarını doğrudan platformumuza bağlamaktır:
+
+**Nedir?**: Bir veya daha fazla telefon numaranızı AiCalls.ai ile yönlendirin.
+
+**Ne için mükemmeldir?**
+- Özel AI telefon hatları
+- Müşteri hizmetleri numaraları
+- Satış veya destek hatları
+
+**Gerekli Bilgiler:**
+- Telefon numaranız (örn: +1 555 0123)
+- SIP sağlayıcınızdan SIP kimlik bilgileri
+- Sağlayıcınızın SIP sunucu adresi
+
+**Gerçek Dünya Örneği**:  
+Bir destek numaranız var: +1 555 0123.  
+Bu numarayı AiCalls.ai ile bağladınız.  
++1 555 0123’e yapılan tüm aramalar AiCalls.ai asistanı tarafından yanıtlanır.  
+AiCalls.ai, +1 555 0123 numarasından giden aramalar yapabilir.
+
+---
+
+## 🔒 **Kimlik Doğrulama & Arama Akışı**
+### **Çift Yönlü Yapılandırma**
+SIP entegrasyonu, hem gelen hem de giden aramalar için aynı kimlik bilgilerini kullanır:
+
+### **Gelen Aramalar (VoIP → AiCalls.ai):**
+- VoIP sisteminiz kullanıcı adı/şifre ile doğrulama yapar
+- Aramalar platformumuza ulaşır
+- AI asistanı yanıtlar
+
+### **Giden Aramalar (AiCalls.ai → VoIP):**
+- AI, arama başlatır
+- Platformumuz, VoIP sisteminize aynı kullanıcı adı/şifre ile doğrulama yapar
+- Arama hedefe ulaşır
+
+---
+
+## 🔑 **Kimlik Bilgisi Senkronizasyonu**
+Entegrasyonun düzgün çalışabilmesi için:
+
+- AiCalls.ai panelinde ayarladığınız kimlik bilgileri, VoIP yapılandırmanızla **tam olarak eşleşmelidir**.
+- Hem gelen hem de giden aramalar için aynı kullanıcı adı/şifre kombinasyonu kullanılır.
+- Kimlik bilgileriyle yapılan değişiklikler her iki sistemde de güncellenmelidir.
+- VoIP sisteminizde kimlik bilgilerini değiştirirseniz, bunları AiCalls.ai panelinde de güncellemeyi unutmayın (veya tersine).
+
+---
+
+## 🛠 **Entegrasyon Kurulumu**
+### **Adım 1: Bilgilerinizi Toplayın**
+- **PBX Uzantısı için**:
+  - Uzantı numarası: (örn: 1000)
+  - Sunucu adresi: (örn: pbx.sirketiniz.com)
+  - Kullanıcı adı: Uzantı kullanıcı adınız
+  - Şifre: Uzantı şifreniz
+
+- **Doğrudan Numaralar için**:
+  - Telefon numarası: (örn: +1 555 0123)
+  - SIP sunucusu: (örn: sip.saglayici.com)
+  - Kullanıcı adı: Telefon şirketiniz tarafından sağlanan
+  - Şifre: Telefon şirketiniz tarafından sağlanan
+
+### **Adım 2: Panelde Yapılandırma**
+- AiCalls.ai panelinize gidin
+- Telefon Numaraları bölümüne geçin
+- “SIP trunk Entegre Et” butonuna tıklayın
+- Entegrasyon türünüze göre bilgilerinizi doldurun
+
+### **Adım 3: Numara Formatı Yapılandırması**
+Bu, sistemimize arama yaparken numaraları nasıl formatlamasını istediğinizi belirtir. Sağlayıcınızın gereksinimlerine göre seçin:
+
+- **Uluslararası + ile**:
+  - Format: +[ülke][numara]
+  - Örnek: +1 202 555 0123
+  - SIP İsteği: sip:+12025550123@your.pbx.com
+
+- **Uluslararası + olmadan**:
+  - Format: [ülke][numara]
+  - Örnek: 1 202 555 0123
+  - SIP İsteği: sip:12025550123@your.pbx.com
+
+- **Ulusal format**:
+  - Format: [yerel numara]
+  - Örnek: 0741926265
+  - SIP İsteği: sip:0741926265@your.pbx.com
+
+### **Adım 4: Kurulumu Doğrulayın**
+- Yapılandırma tamamlandığında:
+  - Numaranıza/uzantınıza bir test araması yapın
+  - AI asistanının yanıt verdiğinden emin olun
+  - Giden aramaları test etmek için test araması özelliğini kullanın
+
+---
+
+## 🔒 **Güvenlik Gereksinimleri**
+SIP kimlik bilgileriniz güvende olmalıdır:
+
+- Kullanıcı adı: Uzantı numaranız veya sağlayıcınız tarafından sağlanan kullanıcı adı
+- Şifre: 
+  - 12 veya daha fazla karakter
+  - Sayılar
+  - Büyük ve küçük harfler
+  - Özel karakterler önerilir
+
+---
+
+## ❓ **Sıkça Sorulan Sorular**
+**Birden fazla numara kullanabilir miyim?**  
+Evet! Birden fazla uzantı veya doğrudan numarayı platformumuza entegre edebilirsiniz.
+
+**Numaralarım üzerinde kontrol kaybeder miyim?**  
+Hayır, mevcut sağlayıcınız üzerinden tam kontrolünüz devam eder. Entegrasyon sadece sisteminiz ile platformumuz arasında bir bağlantı kurar.
+
+**Numaralarımı normal aramalar için kullanmaya devam edebilir miyim?**  
+Evet, telefon sisteminizdeki yönlendirme kurallarını ayarlayarak, hangi çağrıların AI’ya ve hangi çağrıların mevcut telefon sisteminize gideceğini belirleyebilirsiniz.
+
+**Ayarlarımı sonra değiştirebilir miyim?**  
+Evet, entegrasyon ayarlarınızı panel üzerinden istediğiniz zaman güncelleyebilirsiniz. Tüm yapılandırma seçenekleri başlangıç kurulumunun ardından erişilebilir olacaktır.
+
+**Bu, arama maliyetlerine nasıl yardımcı olur?**  
+Kendi VoIP sağlayıcınızı kullanarak, yerel oranlarından ve mevcut anlaşmalarından faydalanabilirsiniz. Bu, genellikle standart taşıyıcı oranlarından daha rekabetçidir. Özellikle uluslararası aramalarda faydalıdır.
+
+---
